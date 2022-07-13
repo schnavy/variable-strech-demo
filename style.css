@@ -2,14 +2,15 @@
     font-family: "ABC Gravity Variable";
     src: url("fonts/ABC\ Gravity\ Variable/ABCGravityVariable-Trial.woff2") format("woff2 supports variations"),
         url("fonts/ABC\ Gravity\ Variable/ABCGravityVariable-Trial.woff2") format("woff2-variations");
-        
+    font-weight: 400;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-#strech-container{
+
+#strech-container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -23,17 +24,17 @@
     align-items: center;
 }
 
-#variable-title{
-    font-size: 200px;
+#variable-title {
+    font-weight: 400;
     display: inline-block;
     text-align: center;
     font-family: "ABC Gravity Variable";
     font-size: 108px;
-    font-variation-settings: "wdth" 8;
+    font-variation-settings: "wdth"8;
     white-space: nowrap;
 }
 
-.test{
+.test {
     display: none;
     margin: auto;
     max-width: 1600px;
