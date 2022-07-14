@@ -60,3 +60,9 @@ body{
     background-color: red;
     opacity: .1;
 }
+
+.settings{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}

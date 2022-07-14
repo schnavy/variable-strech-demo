@@ -1,6 +1,8 @@
 let MIN_TEXT_WIDTH = 400
 let MAX_TEXT_WIDTH = 1600
 
+let verticalStrechBool = true
+
 let varTitle = document.querySelector('#variable-title')
 let body = document.querySelector('body')
 
@@ -8,21 +10,9 @@ window.addEventListener('load', updateFontStrech)
 
 window.addEventListener('resize', updateFontStrech)
 
-
 let scrollPosition = document.scrollingElement.scrollTop
 
-document.addEventListener('scroll', e => {
-  scrollPosition = document.scrollingElement.scrollTop
-
-  varTitle.style.transform =
-    'translateY(-' +
-    (10 + scrollPosition / 50) +
-    'px) scaleY(' +
-    (1 + scrollPosition / 1000) +
-    ')'
-})
-
-
+document.addEventListener('scroll', updateVerticalStrech)
 
 function updateFontStrech () {
   let val = map_range(window.innerWidth, MIN_TEXT_WIDTH, MAX_TEXT_WIDTH, 1.5, 8)
@@ -49,3 +39,26 @@ function map_range (value, low1, high1, low2, high2) {
   return res
 }
 
+function toggleVerticalStrech (elem) {
+  if (elem.checked) {
+    verticalStrechBool = true
+  } else {
+    verticalStrechBool = false
+  }
+  updateVerticalStrech()
+}
+
+function updateVerticalStrech () {
+  if (verticalStrechBool) {
+    scrollPosition = document.scrollingElement.scrollTop
+
+    varTitle.style.transform =
+      'translateY(-' +
+      (10 + scrollPosition / 50) +
+      'px) scaleY(' +
+      (1 + scrollPosition / 1000) +
+      ')'
+  } else {
+    varTitle.style.transform = 'translateY(-10px) scaleY(1)'
+  }
+}
