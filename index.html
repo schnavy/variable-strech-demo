@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="strech-container">
+    <div id="stretch-container">
         <h1 class="but" id="variable-title">Maximilian Kirmse</h1>
     </div>
     <div class="test"></div>
     <div class="settings">
-        Vertical Strech: <input type="checkbox" name="vartical-scaling" id="vartical-scaling-toggle"  onchange="toggleVerticalStrech(this)" checked>
+        Sketchy vertical stretch: <input type="radio" name="vertical-scaling" id="vertical-scaling-toggle" value="verticalStretchBool"  onchange="toggleVerticalStretch(this)" > <br>
+        Variabler vertical stretch: <input type="radio" name="vertical-scaling" id="variable-eartical-scaling-toggle" value="verticalVariableStretchBool"  onchange="toggleVerticalStretch(this)" checked><br>
+        Ohne vertical stretch: <input type="radio" name="vertical-scaling" id="variable-eartical-scaling-toggle" value="noStretch"  onchange="toggleVerticalStretch(this)" ><br>
 
     </div>
 </body>

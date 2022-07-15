@@ -5,7 +5,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-
+    font-stretch: 100% 100%;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
 
 }
 
-#strech-container {
+#stretch-container {
     position: fixed;
     top: 0;
     width: 100%;
@@ -35,7 +35,7 @@ body {
 }
 
 #variable-title {
-    
+    font-stretch: 500%;
     font-weight: 400;
     letter-spacing: normal;
     display: inline-block;
