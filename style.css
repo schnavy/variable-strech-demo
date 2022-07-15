@@ -13,9 +13,9 @@
     padding: 0;
 }
 
-body{
+body {
     height: 600vh;
-    
+
 }
 
 #strech-container {
@@ -35,19 +35,33 @@ body{
 }
 
 #variable-title {
+    
     font-weight: 400;
     letter-spacing: normal;
     display: inline-block;
     text-align: center;
     font-family: "ABC Gravity Variable";
-    font-size: 108px;
+    font-size: 95px;
     font-variation-settings: "wdth"8;
     white-space: nowrap;
 
 
     transform-origin: center top;
-    transform: translateY(-10px) scaleY(1);
+    transform: translateY(0px) scaleY(1);
 }
+
+.but {
+    white-space: nowrap;
+    vertical-align: 0%;
+    border-color: #000000;
+    border: 1px solid;
+    padding: 2px 5% 0px 5%;
+    margin: 20px 10px 0px 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255);
+    box-shadow: 4px 4px 0px rgb(0 0 0);
+}
+
 
 .test {
     height: 200vh;
@@ -61,7 +75,7 @@ body{
     opacity: .1;
 }
 
-.settings{
+.settings {
     position: fixed;
     bottom: 10px;
     left: 10px;
